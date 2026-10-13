@@ -1,0 +1,42 @@
+# Dipendenze
+/vendor/
+/node_modules/
+composer.phar
+
+# Configurazione locale e segreti
+.env
+.env.*
+!.env.example
+config/config.local.php
+config/secret.php
+config/mail.php
+
+# File generati a runtime (token, cache, log, esportazioni)
+/tmp/*
+!/tmp/.gitkeep
+!/tmp/.htaccess
+uploads/
+*.log
+error_log
+
+# Dump database (sono versionati solo schema e seed)
+*.sql
+!sql/schema.sql
+!sql/seed.sql
+!database/*.sql
+
+# Archivi e backup
+*.zip
+*.tar.gz
+*.bak
+*.old
+*~
+
+# Sistema / IDE
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo

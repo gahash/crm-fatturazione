@@ -1,0 +1,146 @@
+.badge { padding: 2px 8px; border-radius: 999px; font-size: 12px; background: #e2e8f0; }
+.badge.pagata { background: #bbf7d0; }
+.badge.emessa { background: #bae6fd; }
+.badge.scaduta { background: #fecaca; }
+.badge.bozza { background: #e5e7eb; }
+.badge.ok { background: #bbf7d0; color: #166534; }
+.badge.ko { background: #fecaca; color: #991b1b; }
+
+/* Modal invio asincrono */
+.modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 9999; align-items: center; justify-content: center; }
+.modal[aria-hidden="false"] { display: flex; }
+.modal-card { background: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); max-width: 600px; width: 90%; overflow: hidden; }
+.modal-header { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border-bottom: 1px solid #e5e7eb; }
+.modal-header h3 { margin: 0; font-size: 18px; }
+.icon-btn { background: none; border: none; cursor: pointer; font-size: 24px; color: #6b7280; padding: 0; }
+.icon-btn:hover { color: #1f2937; }
+
+.btn.success { background:#16a34a; }
+.btn.success:hover { background:#15803d; box-shadow:0 2px 6px rgba(22,163,74,.25); }
+.btn.warning { background:#f59e0b; color:#111827; }
+.btn.warning:hover { background:#d97706; color:#111827; }
+
+.fatture-status-card { max-width:1100px; }
+.fatture-status-head,
+.fatture-filter-head { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.fatture-status-head h3,
+.fatture-filter-head h3 { margin:0; }
+.fatture-status-head .muted { margin:4px 0 0; }
+.fatture-status-actions,
+.fatture-filter-actions { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+.fatture-status-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:10px; margin-top:14px; }
+.fatture-status-metric { display:flex; flex-direction:column; gap:4px; min-width:0; padding:12px; border:1px solid #e2e8f0; border-radius:8px; background:#f8fafc; color:#334155; text-decoration:none; }
+.fatture-status-metric:hover { background:#f0f9ff; }
+.fatture-status-metric span { font-size:12px; font-weight:700; color:#475569; }
+.fatture-status-metric strong { font-size:28px; line-height:1; color:#0f172a; }
+.fatture-status-metric small { color:#64748b; font-size:12px; }
+.fatture-status-metric.is-warning { border-color:#fcd34d; background:#fffbeb; }
+.fatture-status-metric.is-ok { border-color:#bbf7d0; background:#f0fdf4; }
+.fatture-status-details { margin-top:12px; border-top:1px solid #e2e8f0; padding-top:10px; }
+.fatture-status-details summary { cursor:pointer; color:#475569; font-weight:700; }
+.fatture-status-detail-grid { display:grid; gap:6px; margin-top:8px; color:#64748b; font-size:13px; }
+.fatture-status-detail-grid p { margin:0; }
+
+.fatture-filter-card { max-width:1100px; }
+.fatture-filter-grid { display:grid; grid-template-columns:minmax(240px,1.2fr) minmax(190px,.8fr) minmax(190px,.8fr); gap:12px; margin-top:14px; align-items:end; }
+
+.fatture-create-header { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.fatture-create-header h3,
+.fatture-operations-header h3,
+.fatture-list-header h3 { margin:0; }
+.fatture-create-compact { max-width:760px; }
+
+.fatture-operations-card { max-width:1100px; }
+.fatture-operations-header { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:14px; }
+.fatture-operations-header .muted { margin:4px 0 0; }
+.fatture-operations-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:12px; align-items:stretch; }
+.fatture-action-card { position:relative; display:flex; flex-direction:column; gap:10px; min-width:0; padding:14px; border:1px solid #e2e8f0; border-radius:8px; background:#fff; }
+.fatture-action-card h4 { margin:0; font-size:15px; line-height:1.25; color:#0f172a; }
+.fatture-action-card p { margin:0; }
+.fatture-action-card .btn { margin-top:auto; align-self:flex-start; }
+.fatture-action-card form { margin:0; }
+.fatture-action-card textarea { min-height:82px; resize:vertical; }
+.fatture-action-card--wide { grid-column:span 2; }
+.fatture-action-card--danger { border-color:#fecaca; background:#fff7f7; }
+.fatture-action-step { width:26px; height:26px; display:inline-flex; align-items:center; justify-content:center; border-radius:999px; background:#e0f2fe; color:#0369a1; font-weight:800; font-size:12px; }
+.fatture-progress { display:none; margin-top:2px; padding:10px; border:1px solid #dbeafe; border-radius:8px; background:#eff6ff; }
+.fatture-progress.is-active { display:block; }
+.fatture-progress.is-ok { border-color:#bbf7d0; background:#f0fdf4; }
+.fatture-progress.is-error { border-color:#fecaca; background:#fef2f2; }
+.fatture-progress-bar { height:8px; overflow:hidden; border-radius:999px; background:#dbeafe; }
+.fatture-progress-fill { width:0%; height:100%; border-radius:999px; background:#0ea5e9; transition:width .25s ease; }
+.fatture-progress.is-ok .fatture-progress-fill { background:#16a34a; }
+.fatture-progress.is-error .fatture-progress-fill { background:#ef4444; }
+.fatture-progress.is-indeterminate .fatture-progress-fill { width:38%; animation:fattureProgressSlide 1.1s infinite ease-in-out; }
+.fatture-progress-meta { display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap; margin-top:8px; color:#475569; font-size:12px; font-weight:700; }
+.fatture-progress-note { margin-top:8px; color:#64748b; font-size:12px; line-height:1.35; overflow-wrap:anywhere; }
+.fatture-maintenance { margin-top:12px; border-top:1px solid #e2e8f0; padding-top:10px; }
+.fatture-maintenance summary { cursor:pointer; color:#475569; font-weight:700; }
+.fatture-maintenance-actions { display:flex; gap:8px; flex-wrap:wrap; margin-top:10px; }
+
+.fatture-sdi-alert { max-width:1100px; }
+.fatture-sdi-alert-head { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; flex-wrap:wrap; }
+.fatture-sdi-alert-actions { display:flex; gap:8px; flex-wrap:wrap; }
+.fatture-sdi-alert-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:10px; margin-top:14px; }
+.fatture-sdi-alert-card { padding:12px; border-radius:10px; border:1px solid #fecaca; background:#fff7f7; display:flex; flex-direction:column; gap:4px; }
+.fatture-sdi-alert-card strong { font-size:24px; line-height:1; color:#991b1b; }
+.fatture-sdi-alert-card span { font-size:12px; font-weight:700; color:#7f1d1d; }
+.fatture-sdi-alert-list { display:flex; flex-direction:column; gap:10px; margin-top:14px; }
+.fatture-sdi-alert-item { padding:10px 12px; border-radius:10px; border:1px solid #fecaca; background:#fff; }
+.fatture-sdi-alert-item a { color:#991b1b; text-decoration:none; }
+.fatture-sdi-alert-item a:hover { text-decoration:underline; }
+.fatture-sdi-alert-reason { margin-top:6px; display:flex; gap:8px; align-items:flex-start; flex-wrap:wrap; color:#7f1d1d; }
+.fatture-sdi-alert.warning .fatture-sdi-alert-card { border-color:#fcd34d; background:#fffbeb; }
+.fatture-sdi-alert.warning .fatture-sdi-alert-card strong { color:#92400e; }
+.fatture-sdi-alert.warning .fatture-sdi-alert-card span { color:#b45309; }
+.fatture-sdi-alert.warning .fatture-sdi-alert-item { border-color:#fcd34d; background:#fffdf5; }
+.fatture-sdi-alert.warning .fatture-sdi-alert-item a { color:#92400e; }
+.fatture-sdi-alert.warning .fatture-sdi-alert-reason { color:#9a3412; }
+
+@keyframes fattureProgressSlide {
+    0% { transform:translateX(-120%); }
+    50% { transform:translateX(80%); }
+    100% { transform:translateX(260%); }
+}
+
+.fatture-list-card { max-width:none; width:100%; overflow:visible; }
+.fatture-list-header { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:12px; }
+.fatture-table-wrapper { width:100%; overflow-x:auto; }
+.fatture-table { min-width:980px; }
+.fatture-table th:last-child,
+.fatture-table td:last-child { min-width:260px; }
+.fatture-row-actions { display:flex; gap:6px; flex-wrap:wrap; align-items:center; }
+.fatture-status-stack { display:flex; gap:6px; flex-wrap:wrap; align-items:center; max-width:320px; }
+.fatture-warning-badge { background:#fff7ed; color:#9a3412; border:1px solid #fdba74; }
+.fatture-auto-sdi-row--pending td { background:linear-gradient(90deg, #fff8e8 0, #fffdf7 140px, transparent 320px); }
+.fatture-auto-sdi-row--critical td { background:linear-gradient(90deg, #fff1f2 0, #fff8f8 140px, transparent 320px); }
+.fatture-auto-sdi-row td:first-child { border-left:4px solid transparent; }
+.fatture-auto-sdi-row--pending td:first-child { border-left-color:#f59e0b; }
+.fatture-auto-sdi-row--critical td:first-child { border-left-color:#dc2626; }
+.fatture-auto-sdi-cell { box-shadow:inset 0 0 0 1px rgba(148, 163, 184, 0.15); }
+.fatture-auto-sdi-row--pending .fatture-auto-sdi-cell { box-shadow:inset 0 0 0 1px #fcd34d; }
+.fatture-auto-sdi-row--critical .fatture-auto-sdi-cell { box-shadow:inset 0 0 0 1px #fca5a5; }
+
+.fattura-modal-card { max-width: 980px; width: min(980px, 100%); }
+.fattura-modal-section { border:1px solid #e5e7eb; border-radius:10px; padding:12px; margin-top:12px; }
+.fattura-modal-grid { grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; }
+.fattura-modal-actions { display:flex; gap:10px; justify-content:flex-end; margin-top:14px; flex-wrap:wrap; }
+
+@media (max-width: 768px) {
+    .fatture-status-card,
+    .fatture-filter-card,
+    .fatture-operations-card,
+    .fatture-create-compact { max-width:none; }
+    .fatture-filter-grid { grid-template-columns:1fr; }
+    .fatture-status-actions,
+    .fatture-filter-actions { width:100%; }
+    .fatture-status-actions .btn,
+    .fatture-filter-actions .btn { flex:1 1 auto; }
+    .fatture-sdi-alert-actions .btn { flex:1 1 auto; }
+    .fatture-action-card--wide { grid-column:auto; }
+    .fatture-action-card .btn,
+    .fatture-create-header .btn,
+    .fatture-list-header .btn { width:100%; }
+    .fatture-list-header { align-items:stretch; }
+    .fattura-modal-actions .btn { flex:1 1 100%; }
+}

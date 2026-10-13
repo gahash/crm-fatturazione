@@ -1,0 +1,11 @@
+# Impedisce il listing delle directory
+Options -Indexes
+
+# Blocca l'accesso ai file nascosti (.env, .git, ...)
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+# Blocca l'accesso diretto a cartelle non pubbliche
+RedirectMatch 404 ^/(config|tmp|sql|database|docs|vendor)(/|$)
+RedirectMatch 404 ^/composer\.(json|lock)$

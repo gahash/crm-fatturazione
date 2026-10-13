@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="60" viewBox="0 0 240 60" role="img" aria-label="CRM Fatturazione">
+  <rect x="2" y="6" width="48" height="48" rx="10" fill="#2563eb"/>
+  <path d="M15 20h22M15 30h22M15 40h14" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <text x="62" y="28" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">CRM</text>
+  <text x="62" y="48" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#475569">Fatturazione</text>
+</svg>

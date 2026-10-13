@@ -1,0 +1,14 @@
+{
+    "name": "gasparepettinati/crm-fatturazione",
+    "description": "CRM gestionale con fatturazione elettronica, pagamenti Stripe e sincronizzazione Fatture in Cloud",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": ">=7.4",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-pdo": "*",
+        "stripe/stripe-php": "^19.3"
+    }
+}

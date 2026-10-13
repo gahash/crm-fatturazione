@@ -1,0 +1,8 @@
+# Blocca listing directory
+Options -Indexes
+
+# Permetti solo accesso con parametro key (la verifica e nel PHP)
+# Blocca accesso diretto a cron_secret.php
+<Files "cron_secret.php">
+    Require all denied
+</Files>
