@@ -1,0 +1,25 @@
+name: Controllo sintassi PHP
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: ["8.1", "8.3"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          coverage: none
+      - name: php -l su tutti i file
+        run: |
+          errori=0
+          while IFS= read -r -d '' f; do
+            php -l "$f" > /dev/null || errori=1
+          done < <(find . -name '*.php' -not -path './vendor/*' -print0)
+          exit $errori
