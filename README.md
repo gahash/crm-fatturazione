@@ -1,5 +1,7 @@
 # CRM Fatturazione
 
+[![Controllo sintassi PHP](https://github.com/gahash/crm-fatturazione/actions/workflows/php-lint.yml/badge.svg)](https://github.com/gahash/crm-fatturazione/actions/workflows/php-lint.yml)
+
 Gestionale web in PHP per piccole e medie imprese che unisce **CRM clienti**, **fatturazione elettronica**, **incassi con Stripe** e **sincronizzazione con Fatture in Cloud**. Il sistema automatizza il percorso completo *pagamento → ordine → fattura → invio SDI → email al cliente*, con un pannello di monitoraggio per gli amministratori e job cron per le attività ricorrenti.
 
 > Progetto realizzato per un cliente reale e pubblicato come portfolio. Tutti i dati, le credenziali e i riferimenti al cliente sono stati rimossi o sostituiti con valori di esempio.
