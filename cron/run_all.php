@@ -3,7 +3,7 @@
  * CRON WRAPPER: esegue tutti i job in sequenza.
  *
  * Cron di sistema (ogni 5 minuti), ad esempio:
- *   */5 * * * * /usr/bin/php /percorso/progetto/cron/run_all.php
+ *   0-59/5 * * * * /usr/bin/php /percorso/progetto/cron/run_all.php
  */
 
 error_reporting(E_ALL);
